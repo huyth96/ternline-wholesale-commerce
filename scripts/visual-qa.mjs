@@ -58,7 +58,10 @@ try {
     assert.equal(await page.locator(".product-card").count(), 4);
     const portfolioBadge = page.getByRole("link", { name: /Portfolio demo by Huy Trương/ });
     await portfolioBadge.waitFor();
-    assert.equal(await portfolioBadge.getAttribute("href"), "https://github.com/huyth96");
+    assert.equal(
+      await portfolioBadge.getAttribute("href"),
+      "https://github.com/huyth96/ternline-wholesale-commerce",
+    );
     assert.equal(await portfolioBadge.evaluate((element) => getComputedStyle(element).position), "fixed");
     await assertNoPageOverflow(page, `${viewport.name} desk systems`);
     await page.screenshot({ path: path.join(screenshotDirectory, `${viewport.name}-desk-systems.png`) });

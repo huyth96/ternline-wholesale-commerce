@@ -233,10 +233,10 @@ export function CommerceShell({ children }: { children: ReactNode }) {
 
         <a
           className="portfolio-demo-badge"
-          href="https://github.com/huyth96"
+          href="https://github.com/huyth96/ternline-wholesale-commerce"
           target="_blank"
           rel="noreferrer"
-          aria-label="Portfolio demo by Huy Trương — open GitHub profile"
+          aria-label="Portfolio demo by Huy Trương — open project repository"
         >
           Portfolio demo · By Huy Trương <span aria-hidden="true">↗</span>
         </a>
